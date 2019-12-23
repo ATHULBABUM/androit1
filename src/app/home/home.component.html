@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-header display-4">
+        Persons Details
+    </div>
+    <div class="table-responsive">
+        <div class="table">
+            <thead>
+                <tr>
+                    <th>first name</th>
+                    <th>second name</th>
+                    <th>email</th>
+                    <th>address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of persons">
+                    <td>{{i.firstName}}</td>
+                    <td>{{i.lastName}}</td>
+                    <td>{{i.email}}</td>
+                    <td>{{i.address}}</td>
+                </tr>
+            </tbody>
+        </div>
+    </div>
+</div>
